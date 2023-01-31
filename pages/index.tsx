@@ -85,7 +85,7 @@ const Home: NextPage = () => {
         <div className="flex justify-between space-x-5">
           <a
             className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mb-5"
-            href="https://twitter.com/shengxj1/status/1619207448547692547"
+            href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
