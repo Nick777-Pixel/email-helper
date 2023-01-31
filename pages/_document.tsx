@@ -21,11 +21,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://twitterbio.com/og-image.png"
+            content=" "
           />
           <meta
             name="twitter:image"
-            content="https://twitterbio.com/og-image.png"
+            content=" "
           />
           {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6121888364111270"
      crossOrigin="anonymous"></script> */}
