@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   const [desc, setDesc] = useState("");
   const [lang, setLang] = useState<VibeType>("English");
   const [generatedDescs, setGeneratedDescs] = useState<string>("");
-  const defultDesc = 'Tell Nick to have a meeting next Monday morning at the Corp HQ.'
+  const defultDesc = 'Beginner'
   console.log("Streamed response: ", {generatedDescs});
   let promptObj = {
     'English': "UK English",
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Email Generator</title>
+        <title>Boxing Workout Plan Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
         </div>
 
         <h1 className="sm:text-3xl text-2xl max-w-1xl font-bold text-slate-900">
-          Generate your business emails in seconds
+          Generate Boxing workout plan
         </h1>
         {/* <p className="text-slate-500 mt-5">18,167 bios generated so far.</p> */}
         <div className="max-w-xl w-full">
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
               alt="1 icon"
             />
             <p className="text-left font-medium">
-              Write a few sentences about your desired email.
+              Write what level of experience you have in boxing.
             </p>
           </div>
           <textarea
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-4 mt-3 hover:bg-black/80 w-full"
               onClick={(e) => generateDesc(e)}
             >
-              Generate your email &rarr;
+              Generate your plan &rarr;
             </button>
           )}
           {loading && (
@@ -163,7 +163,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated email
+                      Your generated workout plan
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto  whitespace-pre-wrap">
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
                       className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border text-left"
                       onClick={() => {
                         navigator.clipboard.writeText(generatedDescs);
-                        toast("Email copied to clipboard", {
+                        toast("workout plan copied to clipboard", {
                           icon: "✂️",
                         });
                       }}
