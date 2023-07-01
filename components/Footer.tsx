@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
-          href="https://twitter.com/nicholasT1998""
+          href="https://twitter.com/nicholasT1998"
           className="group"
           aria-label="Follow me on Twitter"
         >
