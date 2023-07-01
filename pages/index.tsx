@@ -113,7 +113,7 @@ const Home: NextPage = () => {
               alt="1 icon"
             />
             <p className="text-left font-medium">
-              Write what level of experience you have in boxing.
+              What is your experience level in boxing?
             </p>
           </div>
           <textarea
