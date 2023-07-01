@@ -32,8 +32,8 @@ const Home: NextPage = () => {
     "ភាសាខ្មែរ":"Khmer",
   }
   let text = desc||defultDesc
-  // Generate a boxing workout plan with details and exercises for 7 days when the person is a:
-  const prompt = `Generate a boxing workout plan ${promptObj[lang]} that is user friendly, and detailed when topic is:${text}${text.slice(-1) === "." ? "" : "."}`
+  // Generate a boxing training plan with details and exercises for 7 days when the person is a:
+  const prompt = `Generate a boxing training plan ${promptObj[lang]} that is user friendly, and detailed when topic is:${text}${text.slice(-1) === "." ? "" : "."}`
 
   const generateDesc = async (e: any) => {
     e.preventDefault();
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
         </div>
 
         <h1 className="sm:text-3xl text-2xl max-w-1xl font-bold text-slate-900">
-          Generate a Boxing Workout Plan 🥊
+          Generate a Boxing Training Plan 🥊
         </h1>
         {/* <p className="text-slate-500 mt-5">18,167 bios generated so far.</p> */}
         <div className="max-w-xl w-full">
