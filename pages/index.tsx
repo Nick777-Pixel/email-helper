@@ -33,7 +33,7 @@ const Home: NextPage = () => {
   }
   let text = desc||defultDesc
   // Generate a boxing training plan with details and exercises for 7 days when the person is a:
-  const prompt = `Generate a boxing training plan ${promptObj[lang]} that is user friendly, and detailed when topic is:${text}${text.slice(-1) === "." ? "" : "."}`
+  const prompt = `Generate a boxing training plan for ${promptObj[lang]} that is specific, and detailed when topic is:${text}${text.slice(-1) === "." ? "" : "."}`
 
   const generateDesc = async (e: any) => {
     e.preventDefault();
